@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M O V I E</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/movie-show.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Carter+One&family=Koulen&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- glitch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Carter+One&family=Koulen&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>    
+
+<body class="overflow-x-hidden bg-black ">
+    <header class="w-full h-screen bg-black grid grid-rows-3 grid-cols-1" style="grid-template-rows: 10px auto 500px;">
+        <div class=""></div>
+        <div class="show flex justify-start items-start p-2">
+            <div class=" sm:w-[90%]  xl:w-[70%] h-full rounded-xl p-4 ">
+                <video class="w-full h-full object-contain rounded-xl  jw-video jw-reset" tabindex="-1" disableremoteplayback="" webkit-playsinline="" playsinline="" src="https://1a-1791.com/video/s8/2/b/l/i/C/bliCu.caa.mp4" autoplay controls id="myVideo"></video>
+                
+            </div>
+        </div>
+        <div class="show p-2">
+            <div class="w-full h-[270px] flex"> 
+                <div class="w-[190px] h-[200px] bg-red-900 rounded-xl p-2">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuJYNf_oiqzMeVbvgOANUUu0ilLLRRXftNIDQO5RrvX98kXvNFjFtM4GHxsUmln3tM7HlS0oxoLzWY1maAReOlW56-io1BNWCjh8FNw3shisPsq00gJAzputgcE8ta41ds9COr9JlRV95EsaG-N1bADF-SO_wUCb4dGScJS1car-A_xJp3_c_VQutmQT1r/w720/IMG_20241112_080319_681.jpg" alt="រឿង កំណើតបិសាចនរក" class="object-cover object-[50%_25%] w-full h-full rounded-xl">
+                </div>
+                <div class="p-2 text-[1.3rem] relative w-full">
+                    <div class="flex">
+                        <span class="font-[Koulen] text-white">រឿង
+                            <span> កំណើតបិសាចនរក 
+                                <span class="text-red-800">[English]</span>
+                            </span>
+                        </span>
+                        <!-- <span class="font-[Koulen] text-white text-[1.4rem] mt-[-2px] ml-[10px]">&lt;/Exuma&gt;</span> -->
+                    </div>
+                    <div class="gray flex flex-col gap-2">
+                        <p class="text-[0.9rem] w-[90%] md:w-[70%] xl:w-[40%] text-justify">
+                                 <span class="text-red-900">The Boogeyman</span>
+                                 is a 2023 American supernatural horror film directed by Rob Savage from a screenplay by Scott Beck, Bryan Woods, and Mark Heyman, and a screen story by Beck and Woods.[7] Based on the 1973 short story of the same name by Stephen King, the film follows a family that becomes haunted by the Boogeyman after a troubled man visits and inadvertently brings the creature to them. The ensemble cast includes Sophie Thatcher, Chris Messina, Vivien Lyra Blair, and David Dastmalchian. 
+                        </p>
+                        <p class="text-[0.9rem] text-white font-[Koulen] flex w-[220px] justify-between">
+                            <span>
+                                Dec 17 2024 
+                            </span>
+                            <span>
+                                american
+                            </span>
+                            <span>
+                                138min
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="movie.html">
+                <button class=" text-white w-[120px] h-[30px] mt-[-50px] border-[1px] border-white rounded-lg flex items-center justify-center font-[Koulen] hovering">Return</button>
+            </a>
+        </div>
+    </header>
+    
+    <!-- <script>
+        const video = document.getElementById('myVideo');
+        const startTime = 5;
+        const endTime = 15;
+        video.addEventListener("loadedmetadata",  () =>{
+        video.currentTime = startTime;
+     })
+    </script> -->
+
+</body>
+</html>

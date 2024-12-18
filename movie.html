@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/movie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Carter+One&family=Koulen&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- glitch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Carter+One&family=Koulen&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body class=" bg-black ">
+    <header class="w-full h-[100vh] bg-[url('https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQRC29H19twWKcTZ9Zpg4biJbGNaHF2GGIYNcLt4eZ6fvwugUJbuKxTjjMFPCS-y5P3ZePL57rupDtSkyUIJhv3P8leMJGMzszuG2CHNd65NwWPu5LeKxQkRNfNMHmxAwt7tmQZFk1VIrBd1aXr2AR5DM.jpg?r=5b1]')] bg-cover bg-center brightness-90 overflow-x-hidden head" id="heading">
+        <aside class="w-[80%] h-full bg-gradient-to-r from-black via-transparent to-black-200 top-0 absolute flex justify-start items-start text-white text-[7em] p-4 pt-[120px] pl-[20px]">
+            <div class="flex-nowrap flex flex-col space-y-[-42px]">
+                <p class="welcome text-[5rem] sm:text-[6rem] md:text-[7rem]">Wel <span class="">come</span></p>
+                <div class="space-y-[-10px] p-2 py-1 px-2">
+                    <p class="sm:text-[2.5rem] text-[2rem] welcome">To my movie website. </p>
+                    <p class="text-[0.9rem] article p-2 w-[390px] text-justify font-[Koulen]">We offer you a free movie streaming platform where you can enjoy a wide variety of films and TV shows anytime, anywhere. </p>
+                    <div class="p-2 py-4 px-2 text-[1.2rem] flex gap-8">
+                        <button class="text-[1rem] w-[130px] h-[45px] bg-transparent text-white border-[1px] uppercase flex items-center justify-center rounded-xl font-[Roboto] font-semibold ">Register</button>
+                        <a href="#second-slide" id="second" >
+                            <button class="text-[1rem] w-[130px] h-[45px] bg-white text-black border-[1px] uppercase flex items-center justify-center rounded-xl font-[Roboto] font-semibold">get started</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        
+         <div class="w-full h-full justify-center items-end flex">
+            <div class="w-full h-[170px] bg-gradient-to-t from-black via-black"></div>
+         </div>
+        
+    </header>
+    <header class="absolute top-0 left-0 w-full flex">
+        <nav class="w-full h-[40px] flex justify-start  items-center p-4 font-[Roboto] font-[900] uppercase z-[1200] nav-centering fixed">
+            <ul class="text-white flex justify-evenly w-[220px] rounded-b-xl  backdrop-blur-lg bg-transparent h-[40px] items-center text-[0.7em] cursor-pointer">
+                <a href="">
+                    <li class="home ">Home</li>
+                </a>
+                <a href="">
+                    <li class="movie">Movie</li>
+                </a>
+                <li class="">Contact me</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="w-full h-[508vh] second-slide bg-black p-4 relative grid grid-rows-3 grid-cols-1 second-slide"  id="second-slide" style="grid-template-rows: 50px auto 0px;">
+        <section class="head-section w-full h-[50px] text-white p-2 flex justify-between">
+            <div>
+                <span class="font-[Koulen] text-[2em] ml-[10px]">
+                    <span class="text-red-700">New</span>
+                     Upload
+                     <span class="text-red-700"></span>
+                </span>
+            </div>
+            <div class="flex gap-4 mt-[10px] text-[0.9rem] sm:text-[1rem] sm:gap-6">
+                <a href="">
+                    <span class="cursor-pointer">Movies</span>
+                </a>
+                <a href="">
+                    <span class="cursor-pointer">TVs Shows</span>
+                </a>
+                <a href="">
+                    <span class="cursor-pointer">Anime</span>
+                </a>
+            </div>
+        </section>
+        <section class="w-full h-full p-4 z-[1]">
+            <div class="grid grid-cols-1 grid-rows-1 gap-4">
+                <div class="swiper-container sm:h-[460px] xl:h-[720px]  new-upload w-full h-[320px] p-4 overflow-hidden rounded-[120px]">
+                    <div class="swiper-wrapper ">
+
+                      <div class="swiper-slide bg-black p-2 rounded-xl">
+                        <a href="movie-show.html">
+                          <div class="w-full h-[80%] rounded-lg cursor-pointer">
+                            <div class="relative w-full h-full">
+                              <img src="https://t1.daumcdn.net/news/202403/06/sportstoday/20240306093003740zgol.jpg" alt="E X U M A" class="object-contain object-[50%_15%] w-full h-full rounded-xl" loading="lazy">
+                              <button class="xl:top-[-530px] xl:left-[390px] sm:w-[90px]  w-[70px] relative h-[35px] sm:top-[-325px] top-[-220px] sm:ml-[120px]  ml-[50px] border-[1px] border-black bg-black text-red-500 rounded-lg text-[0.9rem] font-[Koulen] z-[120]">NEW</button>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="w-full h-full rounded-sm p-2">
+                          <div class="w-full h-full">
+                            <div class="flex justify-center items-center">
+                                <span class="font-[Koulen] text-red-700 sm:text-[1.5rem] xl:text-[2rem] text-[1.2rem]">រឿង គាស់ផ្នូរបិសាច</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 text-red-800">
+                            <p class="sm:text-[1.2rem] xl:text-[0.8rem] text-[0.8rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                            <button class="mt-[-5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-600 rounded-lg text-red-800 ">Movie</button>
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide bg-black p-2 rounded-xl ">
+                        <a href="#">
+                          <div class="w-full h-[80%] rounded-lg cursor-pointer">
+                            <div class="relative w-full h-full">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5R_Z1nKeXIsTEGfXySokz1hwhC_EigkznZ7_RDcAfQVbh1jY_0fE4iFaUm_HT7UGjR_SV6gjYoqY2drfkMbTHr3cMjtItqSdeKzszdR3mh2Fijlp8tIVKcFGn9YCZVOkOdAFZtxvNhMwapJCsdeIjWTrBxSrrTE9kf5_43Lv4I1mai0GvD31fGXokuNyb/w720/IMG_20241130_080022_165.jpg" alt="រឿង ត្រណមគ្រូអាគម" class="object-contain object-[50%_15%] w-full h-full rounded-xl" loading="lazy">
+                              <button class="xl:top-[-530px] xl:left-[390px] sm:w-[90px]  w-[70px] relative h-[35px] sm:top-[-325px] top-[-220px] sm:ml-[120px]  ml-[50px] border-[1px] border-black bg-black text-red-500 rounded-lg text-[0.9rem] font-[Koulen] z-[120]">NEW</button>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="w-full h-full rounded-sm p-2">
+                          <div class="w-full h-full">
+                            <div class="flex justify-center items-center">
+                                <span class="font-[Koulen] text-red-700 sm:text-[1.5rem] xl:text-[2rem] text-[1.2rem]">រឿង ត្រណមគ្រូអាគម</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 text-red-800">
+                            <p class="sm:text-[1.2rem] xl:text-[0.8rem] text-[0.8rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 131mn</p>
+                            <button class="mt-[-5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-600 rounded-lg text-red-800 ">Movie</button>
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide bg-black p-2 rounded-xl ">
+                        <a href="#">
+                          <div class="w-full h-[80%] rounded-lg cursor-pointer">
+                            <div class="relative w-full h-full">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBKS3MDcT3VvS57KCB-bJtbnR6EyFCwqI1HqCeDQYwnv2C8qTHM-NOHacRMTHGItmNrTK61G03tjyYnLHQCpWL4FmBtyW2t8scQlPeoCbEJkLAsXJuQ83Fyyg9xDeU7_ZcrR4gjeFwaxhC9zTlDOVDCLnTWZgWbNZoMXFtHbgo2JqmAxHJyJeQ-vdVGQSe/w720/IMG_20241123_215256_373.jpg" 
+                                        alt="រឿង ដែនដីបណ្តាសារ" class="object-contain object-[50%_15%] w-full h-full rounded-xl" loading="lazy">
+                              <button class="xl:top-[-530px] xl:left-[390px] sm:w-[90px]  w-[70px] relative h-[35px] sm:top-[-325px] top-[-220px] sm:ml-[120px]  ml-[50px] border-[1px] border-black bg-black text-red-500 rounded-lg text-[0.9rem] font-[Koulen] z-[120]">NEW</button>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="w-full h-full rounded-sm p-2">
+                          <div class="w-full h-full">
+                            <div class="flex justify-center items-center">
+                                <span class="font-[Koulen] text-red-700 sm:text-[1.5rem] xl:text-[2rem] text-[1.2rem]">រឿង ដែនដីបណ្តាសារ</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 text-red-800">
+                            <p class="sm:text-[1.2rem] xl:text-[0.8rem] text-[0.8rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                            <button class="mt-[-5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-600 rounded-lg text-red-800 ">Movie</button>
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide bg-black p-2 rounded-xl ">
+                        <a href="#">
+                          <div class="w-full h-[80%] rounded-lg cursor-pointer">
+                            <div class="relative w-full h-full">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizmo3fGiQD3J6Bb0lW6p_-cfDcjzN4KLs265x4oqycyAsYS-m_26RfAOMLWU7TAP6eScoBuR6txTBNlwtZfIl2YvQGMxYdGgwzbnynBWZ3ZSLdjj_AcY5JLSz0sB6F0i_udDKKOV3fjLDErMhOOBFFAwMwgB8pSmfeWVkgyKDI5FNUpb9b1hsltpm1E_0z/w720/IMG_20241114_095907_244.jpg" 
+                                        alt="រឿង ល្បែងហៅខ្មោច" class="object-contain object-[50%_15%] w-full h-full rounded-xl" loading="lazy">
+                              <button class="xl:top-[-530px] xl:left-[390px] sm:w-[90px]  w-[70px] relative h-[35px] sm:top-[-325px] top-[-220px] sm:ml-[120px]  ml-[50px] border-[1px] border-black bg-black text-red-500 rounded-lg text-[0.9rem] font-[Koulen] z-[120]">NEW</button>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="w-full h-full rounded-sm p-2">
+                          <div class="w-full h-full">
+                            <div class="flex justify-center items-center">
+                                <span class="font-[Koulen] text-red-700 sm:text-[1.5rem] xl:text-[2rem] text-[1.2rem]">រឿង ល្បែងហៅខ្មោច</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 text-red-800">
+                            <p class="sm:text-[1.2rem] xl:text-[0.8rem] text-[0.8rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                            <button class="mt-[-5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-600 rounded-lg text-red-800 ">Movie</button>
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>                
+                </div>
+                <span class="font-[Koulen] text-[1.5em] ml-[30px] mt-[20px]" id="horror-movies" data-aos="zoom-in">
+                    <span class="text-red-700">Horror</span>
+                     <span class="text-red-700">Movie</span>
+                </span>
+                <div class="mt-[-20px]  w-full h-[1200px] sm:h-[900px] md:grid-rows-3 md:grid-cols-3 lg:grid-cols-4 lg:grid-rows-2 lg:h-[700px]    grid grid-flow-col sm:grid-cols-3 grid-cols-2 grid-rows-4  gap-y-14 sm:grid-rows-3 p-2 xl:grid-cols-4 rounded-lg" >
+                        <div class="bg-black rounded-lg p-2" data-aos="zoom-out">
+                          <div class="w-full h-[80%] bg-black rounded-lg">
+                                  <a href="movie-show.html">
+                                    <img src="https://t1.daumcdn.net/news/202403/06/sportstoday/20240306093003740zgol.jpg" alt="រឿង គាស់ផ្នូរបិសាច" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                                  </a>
+                                </div>
+                            <div class="w-full h-full rounded-sm p-2">
+                                <span class="font-[Koulen]   text-red-500">រឿង គាស់ផ្នូរបិសាច</span>
+                                <div class="flex justify-between text-red-500 w-full">
+                                    <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                                    <a href="movie-show.html">
+                                    <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-black rounded-lg p-2" data-aos="zoom-out">
+                            <div class="w-full h-[80%] bg-black rounded-lg​">
+                              <a href="movie-show2.html">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5R_Z1nKeXIsTEGfXySokz1hwhC_EigkznZ7_RDcAfQVbh1jY_0fE4iFaUm_HT7UGjR_SV6gjYoqY2drfkMbTHr3cMjtItqSdeKzszdR3mh2Fijlp8tIVKcFGn9YCZVOkOdAFZtxvNhMwapJCsdeIjWTrBxSrrTE9kf5_43Lv4I1mai0GvD31fGXokuNyb/w720/IMG_20241130_080022_165.jpg" alt="រឿង​ ត្រណមគ្រូអាគម" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                              </a>
+                            </div>
+                          <div class="w-full h-full rounded-sm p-2">
+                            <span class="font-[Koulen] text-red-500 ">រឿង ត្រណមគ្រូអាគម</span>
+                            <div class="flex justify-between text-red-500 w-full">
+                                <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 131mn</p>
+                              <a href="movie-show2.html">
+                                <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        
+
+                        <div class="bg-black rounded-lg p-2" data-aos="zoom-out">
+                          <a href="movie-show.html">
+                            <div class="w-full h-[80%] bg-black rounded-lg​">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBKS3MDcT3VvS57KCB-bJtbnR6EyFCwqI1HqCeDQYwnv2C8qTHM-NOHacRMTHGItmNrTK61G03tjyYnLHQCpWL4FmBtyW2t8scQlPeoCbEJkLAsXJuQ83Fyyg9xDeU7_ZcrR4gjeFwaxhC9zTlDOVDCLnTWZgWbNZoMXFtHbgo2JqmAxHJyJeQ-vdVGQSe/w720/IMG_20241123_215256_373.jpg" alt="រឿង​ ដែនដីបណ្តាសារ" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                            </div>
+                          </a>
+                          <div class="w-full h-full rounded-sm p-2">
+                            <span class="font-[Koulen] text-red-500">រឿង ដែនដីបណ្តាសារ</span>
+                            <div class="flex justify-between text-red-500 w-full  ">
+                                <p class=" text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                                <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        
+                        <div class="bg-black rounded-lg p-2" data-aos="zoom-out">
+                          <div class="w-full h-[80%] bg-black rounded-lg​">
+                              <a href="movie-show4.html">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizmo3fGiQD3J6Bb0lW6p_-cfDcjzN4KLs265x4oqycyAsYS-m_26RfAOMLWU7TAP6eScoBuR6txTBNlwtZfIl2YvQGMxYdGgwzbnynBWZ3ZSLdjj_AcY5JLSz0sB6F0i_udDKKOV3fjLDErMhOOBFFAwMwgB8pSmfeWVkgyKDI5FNUpb9b1hsltpm1E_0z/w720/IMG_20241114_095907_244.jpg" alt="រឿង​ ល្បែងហៅខ្មោច" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                              </a>
+                            </div>
+                          <div class="w-full h-full rounded-sm p-2">
+                            <span class="font-[Koulen] text-red-500">រឿង ល្បែងហៅខ្មោច</span>
+                            <div class="flex justify-between text-red-500 w-full">
+                                <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                                <a href="movie-show4.html">
+                                <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="bg-black rounded-lg p-2" data-aos="zoom-out">
+                          <div class="w-full h-[80%] bg-black rounded-lg​">
+                              <a href="movie-show3.html">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuJYNf_oiqzMeVbvgOANUUu0ilLLRRXftNIDQO5RrvX98kXvNFjFtM4GHxsUmln3tM7HlS0oxoLzWY1maAReOlW56-io1BNWCjh8FNw3shisPsq00gJAzputgcE8ta41ds9COr9JlRV95EsaG-N1bADF-SO_wUCb4dGScJS1car-A_xJp3_c_VQutmQT1r/w720/IMG_20241112_080319_681.jpg" alt="រឿង​ កំណើតបិសាចនរក" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                              </a>
+                            </div>
+                          <div class="w-full h-full rounded-sm p-2">
+                            <span class="font-[Koulen] text-red-500">រឿង កំណើតបិសាចនរក</span>
+                            <div class="flex justify-between text-red-500 w-full">
+                                <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                                <a href="movie-show3.html">
+                                <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="bg-black rounded-lg p-2" data-aos="zoom-out">
+                          <a href="movie-show.html">
+                            <div class="w-full h-[80%] bg-black rounded-lg​">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRDYOLUjXUn_-ZbRcIXnqJYd2dylxQcH7IXAMNsziwLvZIx2r98HkHceolygoO_zAAsBrPDaM30s8mrB-iewYCCVFyvy_yQxXV9oAjEh4SxkLhtJrLZtoqZhuSYXMnApqzNCQU7wfJNJAxSX5ThAK_6Aul7eTjl25gszoeYI4pHQFM_5dRtIuCYThdlGVf/w720/IMG_20241108_085246_635.jpg" alt="រឿង​ សំណុំរឿងខ្មោច" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                            </div>
+                          </a>
+                          <div class="w-full h-full rounded-sm p-2">
+                            <span class="font-[Koulen] text-red-500">រឿង សំណំុរឿងខ្មោច</span>
+                            <div class="flex justify-between text-red-500 w-full">
+                                <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                                <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                            </div>
+                          </div>
+                        </div>
+                         
+                        <div class="bg-black rounded-lg p-2" data-aos="zoom-out">
+                          <a href="movie-show.html">
+                            <div class="w-full h-[80%] bg-black rounded-lg​">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjLUJDZ4YLC3hfn_UHGNvW4l3iQzgm_tPPmUq_-hM87xrQMd6ZwReaNDZErVXsYD_ksjLKcJilppFeeeo_D5cpvzbmsSoHy_lXtNOG6S4cc_tXKHwWt5MeIIiKHRtjSt963dH__76IQ4HZNhjUzTEyegLETDT7fCrfyvqtIYtYdFHFwXqhPGwkxQAJHm26/w720/IMG_20241020_093407_869.jpg" alt="រឿង​ ឃាតកម្មគ្មានសម្លេង" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                            </div>
+                          </a>
+                          <div class="w-full h-full rounded-sm p-2">
+                            <span class="font-[Koulen] text-red-500">រឿង ឃាតកម្មគ្មានសម្លេង</span>
+                            <div class="flex justify-between text-red-500 w-full">
+                                <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                                <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="bg-black rounded-lg p-2" data-aos="zoom-out">
+                          <a href="movie-show.html">
+                            <div class="w-full h-[80%] bg-black rounded-lg​">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWvZYtlkPdGvhPsBpsQ1Y7ic1Jwq0jC2qnNWqwg6t5_e8XTBkLRPxJvxviZt3Qx_xxD1xOb9JZL8heX5wdLAPlWTQCSN_7eLwTJGwdML2t0z_B3hevoVZaxHyBUkAEp8f53km9oFcDHA4GdHZogs3lmDLIiN2QjiXnCZ838CdtvK0hy_p2lFNiYbw9RlnP/w720/photo_2024-09-25_22-36-29.jpg" alt="រឿង ខ្មោចក្នុងរោងល្ខោន"
+                                          class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                            </div>
+                          </a>
+                          <div class="w-full h-full rounded-sm p-2">
+                            <span class="font-[Koulen] text-red-500">រឿង ខ្មោចក្នុងរោងល្ខោន</span>
+                            <div class="flex justify-between text-red-500 w-full">
+                                <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                                <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                            </div>
+                          </div>
+                        </div>            
+                    
+                </div>
+            </div>
+
+            <div class="mt-[120px]" data-aos="zoom-in">
+              <span class="font-[Koulen] text-[1.5em] ml-[30px]" id="tv-shows" >
+                <span class="text-red-700">Tvs</span>
+                 <span class="text-red-700">Shows</span>
+            </span>
+            </div>
+          <!-- <div class="mt-[0px]  w-full h-[1200px] sm:h-[900px] md:grid-rows-3 md:grid-cols-3 lg:grid-cols-4 lg:grid-rows-2 lg:h-[700px]    grid grid-flow-col sm:grid-cols-3 grid-cols-2 grid-rows-4  gap-y-14 sm:grid-rows-3 p-2 xl:grid-cols-4 rounded-lg" >
+                  <div class="bg-black rounded-lg p-2">
+                      <a href="movie-show.html">
+                          <div class="w-full h-[80%] bg-black rounded-lg">
+                              <img src="https://t1.daumcdn.net/news/202403/06/sportstoday/20240306093003740zgol.jpg" alt="រឿង គាស់ផ្នូរបិសាច" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                          </div>
+                      </a>
+                      <div class="w-full h-full rounded-sm p-2">
+                          <span class="font-[Koulen] text-red-500">រឿង គាស់ផ្នូរបិសាច</span>
+                          <div class="flex justify-between text-red-500 w-full">
+                              <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                              <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="bg-black rounded-lg p-2">
+                    <a href="movie-show.html">
+                      <div class="w-full h-[80%] bg-black rounded-lg​">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5R_Z1nKeXIsTEGfXySokz1hwhC_EigkznZ7_RDcAfQVbh1jY_0fE4iFaUm_HT7UGjR_SV6gjYoqY2drfkMbTHr3cMjtItqSdeKzszdR3mh2Fijlp8tIVKcFGn9YCZVOkOdAFZtxvNhMwapJCsdeIjWTrBxSrrTE9kf5_43Lv4I1mai0GvD31fGXokuNyb/w720/IMG_20241130_080022_165.jpg" alt="រឿង​ ត្រណមគ្រូអាគម" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                      </div>
+                    </a>
+                    <div class="w-full h-full rounded-sm p-2">
+                      <span class="font-[Koulen] text-red-500">រឿង ត្រណមគ្រូអាគម</span>
+                      <div class="flex justify-between text-red-500 w-full">
+                          <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                          <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  <div class="bg-black rounded-lg p-2">
+                    <a href="movie-show.html">
+                      <div class="w-full h-[80%] bg-black rounded-lg​">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBKS3MDcT3VvS57KCB-bJtbnR6EyFCwqI1HqCeDQYwnv2C8qTHM-NOHacRMTHGItmNrTK61G03tjyYnLHQCpWL4FmBtyW2t8scQlPeoCbEJkLAsXJuQ83Fyyg9xDeU7_ZcrR4gjeFwaxhC9zTlDOVDCLnTWZgWbNZoMXFtHbgo2JqmAxHJyJeQ-vdVGQSe/w720/IMG_20241123_215256_373.jpg" alt="រឿង​ ដែនដីបណ្តាសារ" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                      </div>
+                    </a>
+                    <div class="w-full h-full rounded-sm p-2">
+                      <span class="font-[Koulen] text-red-500">រឿង ដែនដីបណ្តាសារ</span>
+                      <div class="flex justify-between text-red-500 w-full  ">
+                          <p class=" text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                          <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                  <div class="bg-black rounded-lg p-2">
+                    <a href="movie-show.html">
+                      <div class="w-full h-[80%] bg-black rounded-lg​">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizmo3fGiQD3J6Bb0lW6p_-cfDcjzN4KLs265x4oqycyAsYS-m_26RfAOMLWU7TAP6eScoBuR6txTBNlwtZfIl2YvQGMxYdGgwzbnynBWZ3ZSLdjj_AcY5JLSz0sB6F0i_udDKKOV3fjLDErMhOOBFFAwMwgB8pSmfeWVkgyKDI5FNUpb9b1hsltpm1E_0z/w720/IMG_20241114_095907_244.jpg" alt="រឿង​ ល្បែងហៅខ្មោច" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                      </div>
+                    </a>
+                    <div class="w-full h-full rounded-sm p-2">
+                      <span class="font-[Koulen] text-red-500">រឿង ល្បែងហៅខ្មោច</span>
+                      <div class="flex justify-between text-red-500 w-full">
+                          <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                          <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-black rounded-lg p-2">
+                    <a href="movie-show.html">
+                      <div class="w-full h-[80%] bg-black rounded-lg​">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuJYNf_oiqzMeVbvgOANUUu0ilLLRRXftNIDQO5RrvX98kXvNFjFtM4GHxsUmln3tM7HlS0oxoLzWY1maAReOlW56-io1BNWCjh8FNw3shisPsq00gJAzputgcE8ta41ds9COr9JlRV95EsaG-N1bADF-SO_wUCb4dGScJS1car-A_xJp3_c_VQutmQT1r/w720/IMG_20241112_080319_681.jpg" alt="រឿង​ កំណើតបិសាចនរក" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                      </div>
+                    </a>
+                    <div class="w-full h-full rounded-sm p-2">
+                      <span class="font-[Koulen] text-red-500">រឿង កំណើតបិសាចនរក</span>
+                      <div class="flex justify-between text-red-500 w-full">
+                          <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                          <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-black rounded-lg p-2">
+                    <a href="movie-show.html">
+                      <div class="w-full h-[80%] bg-black rounded-lg​">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRDYOLUjXUn_-ZbRcIXnqJYd2dylxQcH7IXAMNsziwLvZIx2r98HkHceolygoO_zAAsBrPDaM30s8mrB-iewYCCVFyvy_yQxXV9oAjEh4SxkLhtJrLZtoqZhuSYXMnApqzNCQU7wfJNJAxSX5ThAK_6Aul7eTjl25gszoeYI4pHQFM_5dRtIuCYThdlGVf/w720/IMG_20241108_085246_635.jpg" alt="រឿង​ សំណុំរឿងខ្មោច" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                      </div>
+                    </a>
+                    <div class="w-full h-full rounded-sm p-2">
+                      <span class="font-[Koulen] text-red-500">រឿង សំណំុរឿងខ្មោច</span>
+                      <div class="flex justify-between text-red-500 w-full">
+                          <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                          <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <div class="bg-black rounded-lg p-2">
+                    <a href="movie-show.html">
+                      <div class="w-full h-[80%] bg-black rounded-lg​">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjLUJDZ4YLC3hfn_UHGNvW4l3iQzgm_tPPmUq_-hM87xrQMd6ZwReaNDZErVXsYD_ksjLKcJilppFeeeo_D5cpvzbmsSoHy_lXtNOG6S4cc_tXKHwWt5MeIIiKHRtjSt963dH__76IQ4HZNhjUzTEyegLETDT7fCrfyvqtIYtYdFHFwXqhPGwkxQAJHm26/w720/IMG_20241020_093407_869.jpg" alt="រឿង​ ឃាតកម្មគ្មានសម្លេង" class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                      </div>
+                    </a>
+                    <div class="w-full h-full rounded-sm p-2">
+                      <span class="font-[Koulen] text-red-500">រឿង ឃាតកម្មគ្មានសម្លេង</span>
+                      <div class="flex justify-between text-red-500 w-full">
+                          <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                          <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-black rounded-lg p-2">
+                    <a href="movie-show.html">
+                      <div class="w-full h-[80%] bg-black rounded-lg​">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWvZYtlkPdGvhPsBpsQ1Y7ic1Jwq0jC2qnNWqwg6t5_e8XTBkLRPxJvxviZt3Qx_xxD1xOb9JZL8heX5wdLAPlWTQCSN_7eLwTJGwdML2t0z_B3hevoVZaxHyBUkAEp8f53km9oFcDHA4GdHZogs3lmDLIiN2QjiXnCZ838CdtvK0hy_p2lFNiYbw9RlnP/w720/photo_2024-09-25_22-36-29.jpg" alt="រឿង ខ្មោចក្នុងរោងល្ខោន"
+                                    class="object-contain object-[50%_25%] w-full h-full rounded-xl" >
+                      </div>
+                    </a>
+                    <div class="w-full h-full rounded-sm p-2">
+                      <span class="font-[Koulen] text-red-500">រឿង ខ្មោចក្នុងរោងល្ខោន</span>
+                      <div class="flex justify-between text-red-500 w-full">
+                          <p class="text-[0.7rem] font-bold mt-[-5px]">2024 &nbsp; &nbsp;<span class="text-[1.3rem]">&middot;</span> &nbsp; 134mn</p>
+                          <button class="mt-[-1px] mr-[-8px]  text-[0.8rem] pt-[5px]  uppercase font-[Koulen] w-[50px] border-[1px] border-red-500 rounded-lg text-red-500 ">Movie</button>
+                      </div>
+                    </div>
+                  </div>             -->
+            
+        </section>     
+    </main>
+    <!-- <footer class="bg-black w-full h-[100vh] mt-[20px]">
+
+    </footer> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/movie.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      window.onscroll = function() {
+        let scrollPosition = window.scrollY;
+        if ( scrollPosition > 250)
+        {
+          setTimeout(function(){
+            document.querySelector('.head').style.transform= 'scale(0.7)';
+            document.querySelector('.second-slide').style.marginTop= '-220px';
+          }, 120);
+        }
+        else{
+          setTimeout(function(){
+            document.querySelector('.head').style.transform= 'scale(1)';
+            document.querySelector('.second-slide').style.marginTop= '0px';
+          }, 120);
+        }
+      };
+      
+      
+    </script>
+</body>
+</html>
